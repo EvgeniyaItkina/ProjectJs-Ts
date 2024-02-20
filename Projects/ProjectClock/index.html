@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script defer type="module" src="./script/dom.js"></script>
+</head>
+
+<body>
+    <h1>
+        <span class="span1">W</span>
+        <span class="span2">o</span>
+        <span class="span3">r</span>
+        <span class="span4">d</span>
+        <span class="span5"></span>
+        <span class="span6">C</span>
+        <span class="span7">l</span>
+        <span class="span8">o</span>
+        <span class="span9">c</span>
+        <span class="span10">k</span>
+    </h1>
+
+    <label for="countrySelect">Write a Country: </label>
+    <input type="text" id="countryInput" placeholder="Enter a Country">
+    <button id="searchButton">Search</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>This country contains several time zones. </p>
+            <p>The program will return the first one specified in the API</p>
+        </div>
+    </div>
+
+    <div id="countryInfo">
+        <div id="countryFlag"></div>
+        <div id="countryName"></div>
+        <div id="countryCapital"></div>
+        <div id="currentTime"></div>
+    </div>
+</body>
+
+</html>

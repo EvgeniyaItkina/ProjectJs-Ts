@@ -1,0 +1,34 @@
+$bgcBody: #E5EEFF;
+$bgsTitle: #020253;
+$bgcForm: #8E097C;
+$colorTitle: #0EE1DA;
+$colorTitleP: #F9F9F9;
+$colorFormTitle: #FFFFFF;
+$colorBorderButton: #00000029;
+$colorTextOnButton: #011560;
+
+@mixin bdPictures {
+    border: 2px groove rgba(0, 0, 0, 0.2);
+    /* Цвет рамки с прозрачностью */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /* Тень */
+    padding: 10px;
+    /* Добавляем небольшой внутренний отступ */
+    border-radius: 5px;
+    /* Закругленные углы */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin tablet {
+    @media (max-width:768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width:576px) {
+        @content;
+    }
+}

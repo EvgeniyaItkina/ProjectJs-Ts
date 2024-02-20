@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-top: 3px solid #1AE0EC;
+
+}
+
+nav {
+    color: #000000;
+    font-family: Heeboo, sans-serif;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-icon img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 50px;
+}
+
+.nav-my-name {
+    font-weight: bold;
+    text-align: left;
+    font-family: Heebo;
+}
+
+.humburger {
+    display: none;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.nav-home {
+    display: flex;
+    color: #000;
+    list-style: none;
+    font-size: 2em;
+    margin: 0 50px 0 auto;
+}
+
+.nav-home li {
+    margin: 20px;
+}
+
+/* Стили для выпадающего меню */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #b6afaf;
+    border-radius: 15px;
+    list-style: none;
+    padding: 5px;
+    text-align: left;
+    font-size: 0.5em;
+}
+
+.coman a {
+    text-decoration: none;
+    color: #000000;
+    margin: 5%;
+}
+
+.dropdown-item {
+    margin: 15px 0;
+    padding: 5px;
+}
+
+.nav-project:hover .dropdown-menu {
+    display: block;
+    width: 240px;
+}
+
+.dropdown-menu a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background-color: rgba(19, 232, 241, 0.5);
+    background-image: url(header-background.png);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+}
+
+section h1 {
+    padding-top: 55px;
+    text-align: center;
+    font-size: 4em;
+    font-family: Heebo;
+}
+
+section p {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Heebo;
+}
+
+.bottoms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomDownLoadProject,
+.bottomSeeProject {
+    background-color: rgb(163, 163, 197);
+    padding: 20px;
+    margin: 50px;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.bottomDownLoadProject:hover,
+.bottomSeeProject:hover {
+    transition: all 0.5s ease-in-out;
+    background: #bb5454;
+}
+
+.bottomDownLoadProject a,
+.bottomSeeProject a {
+    text-decoration: none;
+
+}
+
+.icons-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8c67c7;
+    border-top: none;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBFEFF;
+}
+
+article img {
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.footer-end {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:768px),
+screen and (max-width:576px) {
+    .nav-home {
+        display: none;
+        margin: 300px 0 0 50%;
+        background-color: #ccc;
+    }
+
+    .humburger {
+        display: block;
+        margin: 0 50px 0 auto;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .humburger:hover+.nav-home,
+    .nav-home:hover {
+        display: block;
+        width: 50%;
+        position: absolute;
+    }
+
+    section h1 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 0.9em;
+    }
+
+    article {
+        display: block;
+    }
+
+    article img {
+        width: -webkit-fill-available;
+    }
+
+    .bottoms {
+        flex-direction: column;
+    }
+
+    .bottomDownLoadProject,
+    .bottomSeeProject {
+        margin: 10px;
+    }
+}

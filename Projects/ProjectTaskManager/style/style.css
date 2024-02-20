@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: #b5dcc6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #245d1d;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #437c4c;
+    font-weight: 800;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 2px solid #54a75f;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #f8f8f8;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.btn_start {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn_finish {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.btn_change {
+    background-color: #ffc107;
+    color: white;
+}
+
+.btn_delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+#deleteAll {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#deleteAll:hover {
+    background-color: #bd2130;
+}
+
+#modal {
+    display: none;
+    text-align: center;
+    font-size: 2em;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    z-index: 100;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#modal button {
+    margin-bottom: 15px;
+    font-size: 0.6em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+
+    table,
+    th,
+    td,
+    tr {
+        line-height: 1.5;
+        font-size: 14px;
+        padding: 0px 0px 20px 0px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .btn {
+        padding: 5px;
+    }
+
+    .users-table,
+    .users-table thead,
+    .users-table tbody,
+    .users-table th,
+    .users-table td,
+    .users-table tr {
+        display: block;
+    }
+
+    .users-table thead tr {
+        display: none;
+    }
+
+    .users-table td {
+        position: relative;
+        padding: 10px 0;
+        font-size: 16px;
+        min-height: 40px;
+    }
+
+    .users-table td:before {
+        position: absolute;
+        left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    /* Для каждого типа ячейки задаем соответствующее название поля */
+    .users-table td:nth-of-type(1):before {
+        content: "Task:";
+    }
+
+    .users-table td:nth-of-type(2):before {
+        content: "Category:";
+    }
+
+    .users-table td:nth-of-type(3):before {
+        content: "Details:";
+    }
+
+    .users-table td:nth-of-type(4):before {
+        content: "Date:";
+    }
+
+    .users-table td:nth-of-type(5):before {
+        content: "Time:";
+    }
+
+}

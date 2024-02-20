@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    z-index: 2;
+}
+
+#scroll-to-top img {
+    width: 40px;
+    height: 40px;
+}
+
+.conteiner {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    width: 90vw;
+    color: #000000;
+    font-family: Heeboo, sans-serif;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-top: 3px solid #1AE0EC;
+    background-color: #fff;
+    z-index: 3;
+}
+
+.nav-icon img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 50px;
+}
+
+.nav-my-name {
+    font-weight: bold;
+    text-align: left;
+    font-family: Heebo;
+}
+
+.humburger {
+    display: none;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.nav-home {
+    display: flex;
+    color: #000;
+    list-style: none;
+    font-size: 2em;
+    margin: 0 50px 0 auto;
+}
+
+.nav-home li {
+    margin: 10px;
+}
+
+/* Стили для выпадающего меню */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #b6afaf;
+    border-radius: 15px;
+    list-style: none;
+    padding: 5px;
+    text-align: left;
+    font-size: 0.5em;
+}
+
+.coman a {
+    text-decoration: none;
+    color: #000000;
+    margin: 5%;
+}
+
+.dropdown-item {
+    margin: 15px 0;
+    padding: 5px;
+}
+
+.nav-project:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    text-decoration: underline;
+}
+
+header section {
+    height: 20rem;
+    background-color: rgba(19, 232, 241, 0.5);
+    background-image: url("../images/header-background.png");
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+}
+
+header section h1 {
+    margin-top: 100px;
+    padding-top: 5rem;
+    font-size: 5em;
+    font-family: 'Berkshire Swash', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header section p {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+}
+
+.icons-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.portfolio img {
+    grid-area: photo;
+    margin: 0 0 0 20px;
+}
+
+.portfolio h2 {
+    margin-top: 50px;
+    grid-area: title;
+}
+
+.portfolio p {
+    grid-area: text;
+}
+
+.portfolio .bottomCV {
+    grid-area: bottom;
+    margin-bottom: 50px;
+}
+
+.portfolio {
+    height: 400px;
+    display: grid;
+    text-align: center;
+    font-family: heebo;
+    grid-template-areas:
+        'photo title title title'
+        'photo text text text'
+        'photo . . bottom '
+    ;
+    gap: 20px;
+    place-items: center;
+    background-color: #fff;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.picture {
+    width: 200px;
+    border-radius: 25px;
+}
+
+.bottomCV {
+    background-color: none;
+    padding: 20px;
+    border-radius: 15px;
+    margin-right: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+.bottomCV img {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: -16px;
+    left: -25px;
+    z-index: 0;
+}
+
+.bottomCV img:hover {
+    transition: all 0.5s ease-in-out;
+    filter: drop-shadow(10px 8px 3px #ff0055);
+}
+
+
+.project h2 {
+    font-family: heebo;
+    grid-area: title;
+    font-size: 53px;
+}
+
+.project p {
+    font-family: heebo;
+    grid-area: text;
+    font-size: 29px;
+}
+
+.card {
+    width: 350px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 350px 220px;
+    padding-top: 220px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project1 {
+    grid-area: picture1;
+    background-image: url(../images/project1.jpg);
+}
+
+.project2 {
+    grid-area: picture2;
+    background-image: url(../images/project2.jpg);
+    background-size: 180px 220px;
+}
+
+.project3 {
+    grid-area: picture3;
+    background-image: url(../images/project3.jpg);
+}
+
+.project4 {
+    grid-area: picture4;
+    background-image: url(../images/project4.jpg);
+}
+
+.project5 {
+    grid-area: picture5;
+    background-image: url(../images/project5.jpg);
+    background-size: 180px 220px;
+}
+
+.project6 {
+    grid-area: picture6;
+    background-image: url(../images/project7.jpg);
+    background-size: 180px 220px;
+}
+
+.project8 {
+    grid-area: picture8;
+    background-image: url(../images/project8.jpg);
+}
+
+.project {
+    padding: 100px 0;
+    background-color: rgba(223, 223, 223, 0.5);
+    display: grid;
+    text-align: center;
+    grid-template-areas:
+        'title title title'
+        'text text text'
+        'picture1 picture2 picture3'
+        'picture4 picture5 picture6'
+        '. picture8 .'
+    ;
+    place-items: center;
+    gap: 20px;
+}
+
+.projectJs h2 {
+    font-family: heebo;
+    grid-area: titleJs;
+    font-size: 53px;
+}
+
+.projectJs p {
+    font-family: heebo;
+    grid-area: textJs;
+    font-size: 29px;
+    text-align: center;
+}
+
+.projectJs1 {
+    grid-area: pictureJs1;
+    background-image: url(../images/projectJs1.jpg);
+}
+
+.projectJs2 {
+    grid-area: pictureJs2;
+    background-image: url(../images/projectJs2.jpg);
+    background-size: 180px 220px;
+}
+
+.projectJs3 {
+    grid-area: pictureJs3;
+    background-image: url(../images/projectJs3.jpg);
+    background-size: 180px 220px;
+
+}
+
+.projectJs4 {
+    grid-area: pictureJs4;
+    background-image: url(../images/projectJs4.jpg);
+    background-size: 180px 220px;
+}
+
+.projectJs5 {
+    grid-area: pictureJs5;
+    background-image: url(../images/projectJs5.jpg);
+    background-size: 180px 220px;
+}
+
+.projectJs6 {
+    grid-area: pictureJs6;
+    background-image: url(../images/projectJs6.jpg);
+    background-size: 180px 220px;
+}
+
+.projectJs7 {
+    grid-area: pictureJs7;
+    background-image: url(../images/projectJs8.jpg);
+    background-size: 180px 220px;
+}
+
+.projectJs {
+    padding: 100px 0;
+    background-color: rgba(223, 223, 223, 0.5);
+    display: grid;
+    text-align: center;
+    grid-template-areas:
+        'titleJs titleJs titleJs'
+        'textJs textJs textJs'
+        'pictureJs1 pictureJs2 pictureJs3'
+        'pictureJs4 pictureJs5 pictureJs6'
+        '. pictureJs7 .';
+    ;
+    place-items: center;
+    gap: 20px;
+}
+
+.card-body img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.contacts {
+    background-color: #3A3A3A;
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+.email-picture {
+    width: 600px;
+    height: 500px;
+}
+
+.contacts-form {
+    width: 45%;
+    padding: 100px 150px 100px 130px;
+}
+
+.my-form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-button {
+    background: #1AE0EC 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    font-size: 2em;
+    padding: 10px 20px;
+}
+
+.footer-icons {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    color: #1AE0EC;
+    font-family: heebo;
+    padding: 8px;
+    border-bottom: #1AE0EC;
+}
+
+@media screen and (max-width:768px),
+screen and (max-width:576px),
+screen and (max-width:1200px) {
+    .nav-home {
+        display: none;
+        margin: 240px 0 0 50%;
+        background-color: #ccc;
+        font-size: 1em;
+    }
+
+    .humburger {
+        display: block;
+        margin: 0 50px 0 auto;
+    }
+
+    .humburger:hover+.nav-home,
+    .nav-home:hover {
+        display: block;
+        width: 50%;
+
+        position: absolute;
+    }
+
+
+    .dropdown-item {
+        font-size: 1em;
+    }
+
+    header section h1 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 0.9em;
+    }
+
+    .icons-header img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .portfolio {
+        padding: 10px;
+        display: block;
+        height: auto;
+    }
+
+    .bottomCV {
+        margin: auto;
+    }
+
+    .bottomCV img {
+        display: none;
+    }
+
+    .project,
+    .projectJs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts {
+        flex-direction: column;
+    }
+
+    .email-picture {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contacts-form {
+        width: 100%;
+        padding: 0 20px 20px;
+    }
+
+    .footer-icons {
+        font-size: 0.5em;
+    }
+
+    .footer-end {
+        font-size: 0.5em;
+    }
+}

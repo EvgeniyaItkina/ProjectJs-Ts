@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    align-content: space-evenly;
+    border: 1px solid #000;
+    background-color: #ccc;
+}
+
+img {
+    width: 200px;
+    padding-right: 50px;
+}
+
+.card-group {
+    display: flex;
+    column-gap: 16px;
+    padding: 50px;
+    justify-content: center;
+}
+
+.card {
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(85deg, #434343, #262626);
+    padding: 32px;
+    box-shadow: -16px 0 32px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    transition: transform 250ms;
+}
+
+.card ul {
+    list-style: none;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.card:not(:first-child) {
+    margin-left: -130px;
+}
+
+.card:hover {
+    transform: translate(-8px, -16px) rotate(3deg);
+}
+
+.card:hover~.card {
+    transform: translateX(130px);
+}
+
+.form h1 {
+    display: block;
+    width: 60vw;
+    font-size: 3vw;
+    font-weight: 400;
+    color: #000;
+    text-shadow: 0px 0px 36px rgba(197, 67, 67, 0.8);
+    text-align: center;
+    margin: 0 auto;
+}
+
+div h2 {
+    font-size: 2vw;
+    text-align: center;
+    color: chocolate;
+}
+
+.form {
+    margin: 10px;
+}
+
+.form-control {
+    display: grid;
+    color: #5e2b22;
+    font-size: 1em;
+    justify-items: center;
+}
+
+.input {
+    background: #F6F6F624;
+    border: 2px solid #5e2b22;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.paw {
+    padding-top: 80px;
+    font-size: 1.2em;
+    border: none;
+    background: url(../images/paw.png) no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    color: rgb(5, 5, 5);
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.paw:hover {
+    transform: scale(0.95);
+    /* Уменьшаем размер элемента */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Добавляем тень */
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        width: auto;
+        padding: 0;
+    }
+
+    .card-group {
+        display: block;
+    }
+
+    .card {
+        transition: none;
+        flex-direction: column;
+    }
+
+    .card ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card:not(:first-child) {
+        margin: auto;
+        transition: none;
+        transform: none;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    .card:hover~.card {
+        transform: none;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        width: auto;
+        padding: 0;
+    }
+
+    .card-group {
+        display: block;
+    }
+
+    .card {
+        transition: none;
+        flex-direction: column;
+    }
+
+    .card ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card:not(:first-child) {
+        margin: auto;
+        transition: none;
+        transform: none;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+}

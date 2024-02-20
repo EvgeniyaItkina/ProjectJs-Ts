@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #4CAF50;
+    --hover-color: #0d5e13;
+    --shadow-color: #0f3605;
+    --text-color: #0c1f04;
+    --background-color: #41945a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: url(../images/bgGame3.png);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    /* overflow-y: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#game {
+    width: 32%;
+    display: block;
+    background: #ffffff;
+    margin: 10px auto;
+    padding: 20px;
+    border: 15px groove #000;
+    border-radius: 5%;
+    box-shadow: 0 0 0 5px var(--shadow-color);
+}
+
+#header {
+    margin-top: 20px;
+    font-size: 3em;
+    background-color: var(--background-color);
+    width: 45%;
+    border: 1px solid #000;
+    border-radius: 15px;
+    color: var(--text-color);
+    font-weight: bolder;
+    display: block;
+    text-align: center;
+
+}
+
+button {
+    display: block;
+    padding: 20px 40px;
+    margin: 10px auto;
+    font-size: 2em;
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0px 1px 18px 8px #0f3605;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+@media (max-width: 768px) {
+    #header {
+        font-size: 2em;
+        width: 90%;
+        margin-top: 10%;
+        border-radius: 10px;
+    }
+
+    #game {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 5%;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 2rem;
+        margin: 10px auto;
+    }
+
+    body {
+        padding: 20px;
+    }
+}

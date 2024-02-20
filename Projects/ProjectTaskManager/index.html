@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <script defer type="module" src="script/script.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Your Task Manager</h1>
+
+        <form id="taskForm">
+            <label for="task">Task:</label>
+            <input type="text" name="task" id="task" placeholder="Enter your task" required>
+
+            <label for="category">Category:</label>
+            <select required id="category" name="category">
+                <option value="home">Home</option>
+                <option value="work">Work</option>
+                <option value="children">Children</option>
+            </select>
+
+            <details>
+                <summary>Task details</summary>
+                <textarea id="details" name="details" placeholder="Enter task details here..."></textarea>
+            </details>
+
+            <label for="time">Execution Time:</label>
+            <input type="date" id="date" name="date">
+            <input type="time" id="time" name="time">
+
+            <button type="submit" id="addTask">Add Task</button>
+        </form>
+        <br>
+        <br>
+        <div id="tasksList">
+            <table class="users-table">
+                <thead>
+                    <tr>
+                        <th> Task </th>
+                        <th> Category </th>
+                        <th> Details </th>
+                        <th> Date </th>
+                        <th> Time </th>
+                        <th> Buttons </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Content from js -->
+                </tbody>
+            </table>
+        </div>
+        <button id="deleteAll">Delete All</button>
+    </div>
+
+    <div id="modal">
+        <p>You have previous tasks.</p>
+        <button id="downloadTasks">Download</button>
+        <button id="deleteTasks">Delete</button>
+    </div>
+</body>
+
+</html>

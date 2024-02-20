@@ -1,0 +1,69 @@
+.size {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    @include bdPictures;
+    transition: transform 0.3s ease;
+
+}
+
+.size:hover {
+    transform: scale(1.05);
+}
+
+.picture1 {
+    grid-area: pic1;
+
+}
+
+.picture2 {
+    grid-area: pic2;
+}
+
+.picture3 {
+    grid-area: pic3;
+}
+
+.picture4 {
+    grid-area: pic4;
+}
+
+.picture5 {
+    grid-area: pic5;
+}
+
+.picture6 {
+    grid-area: pic6;
+}
+
+.picture7 {
+    grid-area: pic7;
+}
+
+.picture8 {
+    grid-area: pic8;
+}
+
+.picture9 {
+    grid-area: pic9;
+}
+
+.picture10 {
+    grid-area: pic10;
+}
+
+.picture11 {
+    grid-area: pic11;
+}
+
+.picture12 {
+    grid-area: pic12;
+}
+
+.picture13 {
+    grid-area: pic13;
+}
+
+.picture14 {
+    grid-area: pic14;
+}

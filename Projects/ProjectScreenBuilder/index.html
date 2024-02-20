@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Builder</title>
+    <link rel="stylesheet" href="../ProjectScreenBuilder/style/screenBuilder.css">
+
+    <script defer type="module" src="../ProjectScreenBuilder/script/screenBuilder.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="workSpace">
+            <div id="whiteSheet"></div>
+        </div>
+        <div id="formSpace">
+            <h1>This is Screen Builder</h1>
+            <label for="element">Type of Element</label>
+            <select class="element" id="element">
+                <option selected disabled>---------</option>
+                <option value="span">Span</option>
+                <option value="div">Div</option>
+                <option value="paragraph">Paragraph</option>
+                <option value="h1">Title h1</option>
+                <option value="h2">Title h2</option>
+                <option value="h3">Title h3</option>
+            </select>
+            <br>
+            <label for="bgColor">Background</label>
+            <input type="color" name="bgColor" id="bgColor">
+            <br>
+            <div class="box1">
+                <label for="width">Width in px</label>
+                <input type="number" name="width" id="width">
+                <label for="height">Height in px</label>
+                <input type="number" name="height" id="height">
+            </div>
+
+            <label for="textarea">Write Text</label>
+            <textarea name="textarea" id="textarea"></textarea>
+            <br>
+            <label for="font-size">Font Size in px</label>
+            <input type="number" name="font-size" id="font-size"></input>
+
+            <label for="font-color">Font Color</label>
+            <input type="text" name="font-color" id="font-color"></input>
+            <br>
+            <label for="widthBorder">Width of Border px</label>
+            <input type="number" name="widthBorder" id="widthBorder"></input>
+
+            <label for="radiusBorder">Radius of Border</label>
+            <input type="number" name="radiusBorder" id="radiusBorder"></input>
+
+            <label for="colorBorder">Color Border</label>
+            <input type="color" name="colorBorder" id="colorBorder"></input>
+            <br>
+            <label for="padding">Padding</label>
+            <input type="number" name="padding" id="padding"></input>
+
+            <label for="margin">Margin</label>
+            <input type="number" name="margin" id="margin"></input>
+
+            <label for="boxShadowX">Box Shadow X:</label>
+            <input type="number" name="boxShadowX" id="boxShadowX">
+            <br>
+            <label for="boxShadowY">Box Shadow Y:</label>
+            <input type="number" name="boxShadowY" id="boxShadowY">
+            <br>
+            <label for="boxShadowBlur">Box Shadow Blur:</label>
+            <input type="number" name="boxShadowBlur" id="boxShadowBlur">
+            <br>
+
+            <div id="btn_box">
+                <button class="btn btn_doIt">Create</button>
+                <button class="btn btn_save">Save</button>
+                <button class="btn btn_load">Load</button>
+                <button class="btn btn_clear">Clear</button>
+            </div>
+        </div>
+        <div class="messageClear">
+            <p> Clear All(Include Local Storage). Are you sure?</p>
+            <button id="yesClear">Yes</button>
+            <button id="noClear">No</button>
+        </div>
+        <div class="messageLoad">
+            <p>Load Your History. Are you sure?</p>
+            <button id="yesLoad">Yes</button>
+            <button id="noLoad">No</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

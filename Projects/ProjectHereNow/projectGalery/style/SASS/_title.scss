@@ -1,0 +1,27 @@
+.title {
+    width: 100%;
+    height: 100%;
+    background: $bgsTitle;
+    grid-area: title;
+    @include bdPictures;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        width: 80%;
+        color: $colorTitle;
+        text-align: center;
+        font: normal normal normal 2em Assistant;
+        margin-bottom: 10px;
+    }
+
+    p {
+        width: 70%;
+        color: $colorTitleP;
+        text-align: center;
+        font-size: 1em;
+        font-family: 'Assistant', sans-serif;
+    }
+}

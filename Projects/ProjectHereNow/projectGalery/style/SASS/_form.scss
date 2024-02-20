@@ -1,0 +1,71 @@
+.form {
+    width: 100%;
+    height: 100%;
+    background-color: $bgcForm;
+    grid-area: form;
+    @include bdPictures;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .form-text {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-title {
+        padding-bottom: 20px;
+
+
+        h4 {
+            color: $colorFormTitle;
+            text-align: center;
+            font: normal normal normal 1.5em Assistant;
+            padding-bottom: 20px;
+        }
+
+        p {
+            color: $colorTitleP;
+            font-size: 0.8em;
+            text-align: center;
+            font-family: 'Assistant', sans-serif;
+        }
+    }
+
+    .form-input {
+        width: 100%;
+
+        .form-control {
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lable {
+            width: 100%;
+            color: #0EE1DA;
+            font-size: 0.8em;
+
+        }
+
+        .input {
+            width: 100%;
+            font-size: 1.5em;
+            border-bottom: 3px solid #0EE1DA;
+            background-color: #E5EEFF;
+        }
+
+        #btn {
+            width: 100%;
+            background-color: $colorTitle;
+            color: $colorTextOnButton;
+            border: 1px solid $colorBorderButton;
+        }
+    }
+}

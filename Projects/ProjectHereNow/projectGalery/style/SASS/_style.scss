@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.big-Container {
+    background-color: $bgcBody;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+
+    .container {
+        width: 80vw;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include tablet {
+            margin: 0 auto;
+        }
+
+        @include mobile {
+            margin: 0 auto;
+        }
+
+        .main {
+            grid-template-columns: repeat(4, 150px);
+            grid-template-rows: repeat(6, 150px);
+            display: grid;
+            grid-template-areas:
+                'pic1 pic2 title title'
+                'pic3 pic4 title title'
+                'pic5 pic6 pic7 pic8'
+                'form form pic9 pic10'
+                'form form pic11 pic12'
+                'form form pic13 pic14'
+            ;
+            gap: 5px;
+            align-items: center;
+            /* Выравнивание элементов по вертикали внутри ячейки */
+            justify-items: center;
+
+            @include tablet {
+                margin: 0 auto;
+                grid-template-columns: repeat(2, 150px);
+                grid-template-rows: repeat(12, 150px);
+                display: grid;
+                grid-template-areas:
+                    'title title'
+                    'title title'
+                    'pic1 pic2'
+                    'pic3 pic4'
+                    'pic5 pic6'
+                    'pic7 pic8'
+                    'form form'
+                    'form form'
+                    'form form'
+                    'pic9 pic10'
+                    'pic11 pic12'
+                    'pic13 pic14'
+                ;
+                gap: 5px;
+                align-items: center;
+                /* Выравнивание элементов по вертикали внутри ячейки */
+                justify-items: center;
+            }
+
+            @include mobile {
+                margin: 0 auto;
+                grid-template-columns: repeat(2, 150px);
+                grid-template-rows: repeat(12, 150px);
+                display: grid;
+                grid-template-areas:
+                    'title title'
+                    'title title'
+                    'pic1 pic2'
+                    'pic3 pic4'
+                    'pic5 pic6'
+                    'pic7 pic8'
+                    'form form'
+                    'form form'
+                    'form form'
+                    'pic9 pic10'
+                    'pic11 pic12'
+                    'pic13 pic14'
+                ;
+                gap: 5px;
+                align-items: center;
+                /* Выравнивание элементов по вертикали внутри ячейки */
+                justify-items: center;
+            }
+        }
+    }
+}

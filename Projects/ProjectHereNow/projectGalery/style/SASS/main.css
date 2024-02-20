@@ -1,0 +1,252 @@
+@charset "UTF-8";
+.title {
+  width: 100%;
+  height: 100%;
+  background: #020253;
+  grid-area: title;
+  border: 2px groove rgba(0, 0, 0, 0.2);
+  /* Цвет рамки с прозрачностью */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  /* Тень */
+  padding: 10px;
+  /* Добавляем небольшой внутренний отступ */
+  border-radius: 5px;
+  /* Закругленные углы */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title h1 {
+  width: 80%;
+  color: #0EE1DA;
+  text-align: center;
+  font: normal normal normal 2em Assistant;
+  margin-bottom: 10px;
+}
+.title p {
+  width: 70%;
+  color: #F9F9F9;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Assistant", sans-serif;
+}
+
+.size {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  border: 2px groove rgba(0, 0, 0, 0.2);
+  /* Цвет рамки с прозрачностью */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  /* Тень */
+  padding: 10px;
+  /* Добавляем небольшой внутренний отступ */
+  border-radius: 5px;
+  /* Закругленные углы */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.size:hover {
+  transform: scale(1.05);
+}
+
+.picture1 {
+  grid-area: pic1;
+}
+
+.picture2 {
+  grid-area: pic2;
+}
+
+.picture3 {
+  grid-area: pic3;
+}
+
+.picture4 {
+  grid-area: pic4;
+}
+
+.picture5 {
+  grid-area: pic5;
+}
+
+.picture6 {
+  grid-area: pic6;
+}
+
+.picture7 {
+  grid-area: pic7;
+}
+
+.picture8 {
+  grid-area: pic8;
+}
+
+.picture9 {
+  grid-area: pic9;
+}
+
+.picture10 {
+  grid-area: pic10;
+}
+
+.picture11 {
+  grid-area: pic11;
+}
+
+.picture12 {
+  grid-area: pic12;
+}
+
+.picture13 {
+  grid-area: pic13;
+}
+
+.picture14 {
+  grid-area: pic14;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  background-color: #8E097C;
+  grid-area: form;
+  border: 2px groove rgba(0, 0, 0, 0.2);
+  /* Цвет рамки с прозрачностью */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  /* Тень */
+  padding: 10px;
+  /* Добавляем небольшой внутренний отступ */
+  border-radius: 5px;
+  /* Закругленные углы */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form .form-text {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form .form-title {
+  padding-bottom: 20px;
+}
+.form .form-title h4 {
+  color: #FFFFFF;
+  text-align: center;
+  font: normal normal normal 1.5em Assistant;
+  padding-bottom: 20px;
+}
+.form .form-title p {
+  color: #F9F9F9;
+  font-size: 0.8em;
+  text-align: center;
+  font-family: "Assistant", sans-serif;
+}
+.form .form-input {
+  width: 100%;
+}
+.form .form-input .form-control {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form .form-input .lable {
+  width: 100%;
+  color: #0EE1DA;
+  font-size: 0.8em;
+}
+.form .form-input .input {
+  width: 100%;
+  font-size: 1.5em;
+  border-bottom: 3px solid #0EE1DA;
+  background-color: #E5EEFF;
+}
+.form .form-input #btn {
+  width: 100%;
+  background-color: #0EE1DA;
+  color: #011560;
+  border: 1px solid rgba(0, 0, 0, 0.1607843137);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.big-Container {
+  background-color: #E5EEFF;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.big-Container .container {
+  width: 80vw;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .big-Container .container {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 576px) {
+  .big-Container .container {
+    margin: 0 auto;
+  }
+}
+.big-Container .container .main {
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(6, 150px);
+  display: grid;
+  grid-template-areas: "pic1 pic2 title title" "pic3 pic4 title title" "pic5 pic6 pic7 pic8" "form form pic9 pic10" "form form pic11 pic12" "form form pic13 pic14";
+  gap: 5px;
+  align-items: center;
+  /* Выравнивание элементов по вертикали внутри ячейки */
+  justify-items: center;
+}
+@media (max-width: 768px) {
+  .big-Container .container .main {
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(12, 150px);
+    display: grid;
+    grid-template-areas: "title title" "title title" "pic1 pic2" "pic3 pic4" "pic5 pic6" "pic7 pic8" "form form" "form form" "form form" "pic9 pic10" "pic11 pic12" "pic13 pic14";
+    gap: 5px;
+    align-items: center;
+    /* Выравнивание элементов по вертикали внутри ячейки */
+    justify-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .big-Container .container .main {
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(12, 150px);
+    display: grid;
+    grid-template-areas: "title title" "title title" "pic1 pic2" "pic3 pic4" "pic5 pic6" "pic7 pic8" "form form" "form form" "form form" "pic9 pic10" "pic11 pic12" "pic13 pic14";
+    gap: 5px;
+    align-items: center;
+    /* Выравнивание элементов по вертикали внутри ячейки */
+    justify-items: center;
+  }
+}/*# sourceMappingURL=main.css.map */

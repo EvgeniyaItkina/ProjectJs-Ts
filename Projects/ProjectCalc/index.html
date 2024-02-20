@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul</title>
+    <link rel="stylesheet" href="./style/calculProject.css">
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" step="any" id="userInput">
+        <div class="calculator">
+            <button onclick="clickNumber(1)">1</button>
+            <button onclick="clickNumber(2)">2</button>
+            <button onclick="clickNumber(3)">3</button>
+            <button onclick="clickMethod('+')">+</button>
+
+
+            <button onclick="clickNumber(4)">4</button>
+            <button onclick="clickNumber(5)">5</button>
+            <button onclick="clickNumber(6)">6</button>
+            <button onclick="clickMethod('-')">-</button>
+
+
+            <button onclick="clickNumber(7)">7</button>
+            <button onclick="clickNumber(8)">8</button>
+            <button onclick="clickNumber(9)">9</button>
+            <button onclick="clickMethod('x')">x</button>
+
+            <button onclick="clickSign()">+/-</button>
+            <button onclick="clickNumber(0)">0</button>
+            <button onclick="clickNumber('.')">,</button>
+            <button onclick="clickMethod('/')">/</button>
+
+            <button id="clean" onclick="clean()">Clean</button>
+            <button id="none"></button>
+            <button id="delete" onclick="deleteLast()">Delete</button>
+            <button onclick="result()">=</button>
+
+        </div>
+
+    </div>
+
+
+    <script src="./script/newCalc.js"></script>
+
+</body>
+
+</html>

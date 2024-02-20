@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* Центрирование по вертикали */
+    height: 100vh;
+    background-color: #333;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.simon-game {
+    /* margin: 50px 0; */
+    display: grid;
+    /* justify-content: center; */
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+    gap: 50px;
+    position: relative;
+    width: 650px;
+    /* Ширина, достаточная для размещения кнопок и зазоров */
+    height: 650px;
+    /* Высота, аналогично ширине */
+    /* margin: auto; */
+}
+
+
+.color-button {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.red {
+    background-color: red;
+}
+
+.red:hover {
+    background-color: rgb(170, 0, 0);
+}
+
+.green {
+    background-color: green;
+}
+
+.green:hover {
+    background-color: rgb(0, 170, 0);
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.yellow:hover {
+    background-color: rgb(170, 170, 0);
+}
+
+.blue {
+    background-color: blue;
+}
+
+.blue:hover {
+    background-color: rgb(0, 0, 170);
+}
+
+#score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    font-size: 3em;
+    font-weight: bold;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 15);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+.game-over {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.game-over img {
+    max-width: 240px;
+    margin-right: 20px;
+}
+
+.game-over .message {
+    font-size: 20px;
+    color: #333;
+    flex-grow: 1;
+    text-align: center;
+}
+
+#innerBox {
+    display: flex;
+    flex-direction: column;
+}
+
+#closeButton {
+    display: block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #ff4444;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#closeButton:hover {
+    background-color: #cc0000;
+}
+
+.start-button {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.start-button:hover {
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 600px) {
+    .simon-game {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+    .color-button {
+        width: 100%;
+        height: 150px;
+    }
+
+    .game-over {
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 180px;
+    }
+
+    .game-over img {
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #score {
+        width: 150px;
+        height: 150px;
+        font-size: 1em;
+    }
+
+    #innerBox {
+        width: 100%;
+    }
+
+    #closeButton,
+    .start-button {
+        width: 100%;
+    }
+
+    body,
+    .start-button {
+        padding: 5px;
+    }
+}
