@@ -1,7 +1,7 @@
-#My FullStack Journey#
+#My FullStack Journey
 Welcome to my evolving project portfolio following a 5-month intensive block of a FullStack web development course. Starting from scratch, I've acquired foundational skills in programming languages and web development technologies.
 
-#Technologies Used#
+#Technologies Used
 Throughout this journey, I've utilized a range of technologies to build various web applications, including:
 
 *HTML: The essential building block of web content.
@@ -12,11 +12,11 @@ Throughout this journey, I've utilized a range of technologies to build various 
 *TypeScript: Leveraged for adding static type definitions to JavaScript, enhancing code quality and maintainability.
 \*OOP Concepts: Applied Object-Oriented Programming principles across projects to structure code more efficiently and logically.
 
-#Projects Overview#
+#Projects Overview
 **Main Page**
 The main page serves as a showcase for all projects, highlighting my ability to translate design layouts into functional web applications. It demonstrates selective Bootstrap application for enhanced user experience.
 
-#Project Coffee#
+**Project Coffee**
 Despite being the simplest of the assigned projects, Project Coffee played a crucial role in my learning journey. With guidance from my mentor, I not only initiated the project but also independently refined it to align perfectly with the provided design layout. Additionally, I worked extensively to ensure its responsiveness.
 
 **Project Galery**
@@ -48,12 +48,13 @@ Dynamic Interaction: Features an evasive "No" button, creating a humorous challe
 
 This project combines technical proficiency with creative design to offer a unique user experience.
 
-Achievements
+#Achievements
 Developed and refined web applications from scratch.
 Applied responsive design principles across projects for an optimal user experience.
 Enhanced layout and styling using Bootstrap and SASS.
 Addressed complex web development scenarios using JavaScript, and the canvas.
-Conclusion
+
+**Conclusion**
 This portfolio not only showcases my technical skills but also my dedication to learning and improving as a FullStack developer. I look forward to tackling more challenging projects and continuing my journey in web development.
 
 Thank you for exploring my projects!
